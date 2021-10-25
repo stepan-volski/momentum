@@ -5,6 +5,7 @@ import { initPlayer } from './scripts/player';
 import { initQuote } from './scripts/quotes';
 import { displayTime, displayDate } from "./scripts/time.js";
 import { initWeather, getCity } from "./scripts/weather.js";
+import { initEval } from "./scripts/self-eval.js";
 
 
 //init greeting
@@ -35,4 +36,5 @@ langSwitch.addEventListener('click', () => displayDate(language));
 langSwitch.addEventListener('click', () => initWeather(getCity()));
 
 
-//TODO correct work with language var (use getter?)
+//self eval
+initEval();
